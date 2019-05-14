@@ -1,0 +1,47 @@
+/*-------tablet screen-------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.blogBody {
+		grid-template-columns: 1fr 2fr;
+		padding: 85px 5% 0;
+	}
+	.rightSec .cardsSec {
+		margin-bottom: 50px;
+	}
+	.rightSec .cardsSec .divider {
+		display: none;
+	}
+	.rightSec .cardsSec .foodCards {
+		margin-bottom: 30px;
+	}
+	.rightSec .cardsSec .foodCards .card {
+		width: 100%;
+	}
+	.rightSec .cardsSec .foodCards .card img[alt="triangle"] {
+		display: none;
+	}
+}
+/*-------mobile screen-------*/
+@media screen and (max-width: 768px) {
+	.blogBody {
+		grid-template-columns: 1fr;
+		padding: 85px 5% 0;
+	}
+	.rightSec .cardsSec {
+		margin-bottom: 50px;
+	}
+	.blogBody .leftSec {
+		order: 2;
+	}
+	.rightSec .cardsSec .divider {
+		display: none;
+	}
+	.rightSec .cardsSec .foodCards {
+		margin-bottom: 30px;
+	}
+	.rightSec .cardsSec .foodCards .card {
+		width: 100%;
+	}
+	.rightSec .cardsSec .foodCards .card img[alt="triangle"] {
+		display: none;
+	}
+}

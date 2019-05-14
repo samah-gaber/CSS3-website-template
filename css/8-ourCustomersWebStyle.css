@@ -1,0 +1,667 @@
+/*-----mainSec-----*/
+.mainSec {
+	background-image: url(../img/ourcustomers/ourcustomers.jpg),-webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);
+}
+.mainSec p {
+	width: 50%;
+}
+/*-----categories-----*/
+.categories {
+	padding-top: 85px;
+	position: relative;
+}
+.categories h3 {
+	font-size: 2.4rem;
+	margin-bottom: 85px;
+}
+.categories p {
+	color: #6f7880;
+	font-size: 1.8rem;
+	margin-bottom: 95px;
+}
+.categories ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 65px;
+}
+.categories li {
+	display: inline-block;
+	box-sizing: border-box;
+}
+.categories span {
+	color: #000;
+	font-size: 1.4rem;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	background-color: transparent;
+	padding: 10px 25px;
+	position: absolute;
+	top: 30%;
+}
+.categories span#all {
+	left: 25%;
+}
+.categories span#cafe {
+	left: 35%;
+}
+.categories span#rest {
+	left: 45%;
+}
+.categories span#hotel {
+	left: 55%;
+}
+.categories span#cater {
+	left: 65%;
+}
+.categories span:focus {
+	color: #fff;
+	background-color: #86a64c;
+	border-color: #86a64c;
+}
+.categories span:focus ~ .logos {
+	display: none;
+}
+.categories span#all:focus ~ #allLogos {
+	display: block;
+}
+.categories span#cafe:focus ~ #cafeLogos {
+	display: block;
+}
+.categories span#rest:focus ~ #restLogos {
+	display: block;
+}
+.categories span#hotel:focus ~ #hotelLogos {
+	display: block;
+}
+.categories span#cater:focus ~ #caterLogos {
+	display: block;
+}
+.categories .logos {
+	padding: 85px 0;
+	background-color: #fff;
+}
+.categories .logos .top, .categories .logos .bottom {
+	width: 100%;
+	height: 130px;
+	overflow: hidden;
+	position: relative;
+}
+.categories .logos .top {
+	margin-bottom: 185px;
+}
+.categories .logos .img {
+	display: inline-block;
+	position: absolute;
+	height: 130px;
+	width: 25%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+.categories #cafeLogos, #restLogos, #hotelLogos, #caterLogos {
+	display: none;
+}
+.categories #allLogos .top #img1 {
+	left: 0%;
+	background-image: url(../img/ourcustomers/rest6.png);
+	animation-name: img1;
+}
+.categories #allLogos .top #img2 {
+	left: 25%;
+	background-image: url(../img/ourcustomers/hotel3.png);
+	animation-name: img2;
+}
+.categories #allLogos .top #img3 {
+	left: 50%;
+	background-image: url(../img/ourcustomers/hotel4.png);
+	animation-name: img3;
+}
+.categories #allLogos .top #img4 {
+	left: 75%;
+	background-image: url(../img/ourcustomers/cafe5.png);
+	animation-name: img4;
+}
+.categories #allLogos .top #img5 {
+	left: 100%;
+	background-image: url(../img/ourcustomers/cafe1.png);
+	animation-name: img5;
+}
+.categories #allLogos .top #img6 {
+	left: 125%;
+	background-image: url(../img/ourcustomers/cater1.jpg);
+	animation-name: img6;
+}
+.categories #allLogos .top #img7 {
+	left: -50%;
+	background-image: url(../img/ourcustomers/hotel1.png);
+	animation-name: img7;
+}
+.categories #allLogos .top #img8 {
+	left: -25%;
+	background-image: url(../img/ourcustomers/rest1.jpg);
+	animation-name: img8;
+}
+.categories #allLogos .bottom #img1 {
+	left: 100%;
+	background-image: url(../img/ourcustomers/cafe2.png);
+	animation-name: img5;
+}
+.categories #allLogos .bottom #img2 {
+	left: 125%;
+	background-image: url(../img/ourcustomers/cater2.jpg);
+	animation-name: img6;
+}
+.categories #allLogos .bottom #img3 {
+	left: -50%;
+	background-image: url(../img/ourcustomers/hotel2.png);
+	animation-name: img7;
+}
+.categories #allLogos .bottom #img4 {
+	left: -25%;
+	background-image: url(../img/ourcustomers/rest2.png);
+	animation-name: img8;
+}
+.categories #allLogos .bottom #img5 {
+	left: 0%;
+	background-image: url(../img/ourcustomers/hotel5.png);
+	animation-name: img1;
+}
+.categories #allLogos .bottom #img6 {
+	left: 25%;
+	background-image: url(../img/ourcustomers/rest7.png);
+	animation-name: img2;
+}
+.categories #allLogos .bottom #img7 {
+	left: 50%;
+	background-image: url(../img/ourcustomers/hotel6.png);
+	animation-name: img3;
+}
+.categories #allLogos .bottom #img8 {
+	left: 75%;
+	background-image: url(../img/ourcustomers/rest8.png);
+	animation-name: img4;
+}
+.categories #cafeLogos .top #img1 {
+	left: 0%;
+	background-image: url(../img/ourcustomers/cafe1.png);
+	animation-name: img1;
+}
+.categories #cafeLogos .top #img2 {
+	left: 25%;
+	background-image: url(../img/ourcustomers/cafe2.png);
+	animation-name: img2;
+}
+.categories #cafeLogos .top #img3 {
+	left: 50%;
+	background-image: url(../img/ourcustomers/cafe3.png);
+	animation-name: img3;
+}
+.categories #cafeLogos .top #img4 {
+	left: 75%;
+	background-image: url(../img/ourcustomers/cafe4.png);
+	animation-name: img4;
+}
+.categories #cafeLogos .top #img5 {
+	left: 100%;
+	background-image: url(../img/ourcustomers/cafe5.png);
+	animation-name: img5;
+}
+.categories #cafeLogos .top #img6 {
+	left: 125%;
+	background-image: url(../img/ourcustomers/cafe6.jpg);
+	animation-name: img6;
+}
+.categories #cafeLogos .top #img7 {
+	left: -50%;
+	background-image: url(../img/ourcustomers/cafe7.png);
+	animation-name: img7;
+}
+.categories #cafeLogos .top #img8 {
+	left: -25%;
+	background-image: url(../img/ourcustomers/cafe8.jpg);
+	animation-name: img8;
+}
+.categories #cafeLogos .bottom #img1 {
+	left: 100%;
+	background-image: url(../img/ourcustomers/cafe1.png);
+	animation-name: img5;
+}
+.categories #cafeLogos .bottom #img2 {
+	left: 125%;
+	background-image: url(../img/ourcustomers/cafe2.png);
+	animation-name: img6;
+}
+.categories #cafeLogos .bottom #img3 {
+	left: -50%;
+	background-image: url(../img/ourcustomers/cafe3.png);
+	animation-name: img7;
+}
+.categories #cafeLogos .bottom #img4 {
+	left: -25%;
+	background-image: url(../img/ourcustomers/cafe4.png);
+	animation-name: img8;
+}
+.categories #cafeLogos .bottom #img5 {
+	left: 0%;
+	background-image: url(../img/ourcustomers/cafe5.png);
+	animation-name: img1;
+}
+.categories #cafeLogos .bottom #img6 {
+	left: 25%;
+	background-image: url(../img/ourcustomers/cafe6.jpg);
+	animation-name: img2;
+}
+.categories #cafeLogos .bottom #img7 {
+	left: 50%;
+	background-image: url(../img/ourcustomers/cafe7.png);
+	animation-name: img3;
+}
+.categories #cafeLogos .bottom #img8 {
+	left: 75%;
+	background-image: url(../img/ourcustomers/cafe8.jpg);
+	animation-name: img4;
+}
+.categories #restLogos .top #img1 {
+	left: 0%;
+	background-image: url(../img/ourcustomers/rest1.jpg);
+	animation-name: img1;
+}
+.categories #restLogos .top #img2 {
+	left: 25%;
+	background-image: url(../img/ourcustomers/rest2.png);
+	animation-name: img2;
+}
+.categories #restLogos .top #img3 {
+	left: 50%;
+	background-image: url(../img/ourcustomers/rest3.png);
+	animation-name: img3;
+}
+.categories #restLogos .top #img4 {
+	left: 75%;
+	background-image: url(../img/ourcustomers/rest4.png);
+	animation-name: img4;
+}
+.categories #restLogos .top #img5 {
+	left: 100%;
+	background-image: url(../img/ourcustomers/rest5.png);
+	animation-name: img5;
+}
+.categories #restLogos .top #img6 {
+	left: 125%;
+	background-image: url(../img/ourcustomers/rest6.png);
+	animation-name: img6;
+}
+.categories #restLogos .top #img7 {
+	left: -50%;
+	background-image: url(../img/ourcustomers/rest7.png);
+	animation-name: img7;
+}
+.categories #restLogos .top #img8 {
+	left: -25%;
+	background-image: url(../img/ourcustomers/rest8.png);
+	animation-name: img8;
+}
+.categories #restLogos .bottom #img1 {
+	left: 100%;
+	background-image: url(../img/ourcustomers/rest1.jpg);
+	animation-name: img5;
+}
+.categories #restLogos .bottom #img2 {
+	left: 125%;
+	background-image: url(../img/ourcustomers/rest2.png);
+	animation-name: img6;
+}
+.categories #restLogos .bottom #img3 {
+	left: -50%;
+	background-image: url(../img/ourcustomers/rest3.png);
+	animation-name: img7;
+}
+.categories #restLogos .bottom #img4 {
+	left: -25%;
+	background-image: url(../img/ourcustomers/rest4.png);
+	animation-name: img8;
+}
+.categories #restLogos .bottom #img5 {
+	left: 0%;
+	background-image: url(../img/ourcustomers/rest5.png);
+	animation-name: img1;
+}
+.categories #restLogos .bottom #img6 {
+	left: 25%;
+	background-image: url(../img/ourcustomers/rest6.png);
+	animation-name: img2;
+}
+.categories #restLogos .bottom #img7 {
+	left: 50%;
+	background-image: url(../img/ourcustomers/rest7.png);
+	animation-name: img3;
+}
+.categories #restLogos .bottom #img8 {
+	left: 75%;
+	background-image: url(../img/ourcustomers/rest8.png);
+	animation-name: img4;
+}
+.categories #hotelLogos .top #img1 {
+	left: 0%;
+	background-image: url(../img/ourcustomers/hotel1.png);
+	animation-name: img1;
+}
+.categories #hotelLogos .top #img2 {
+	left: 25%;
+	background-image: url(../img/ourcustomers/hotel2.png);
+	animation-name: img2;
+}
+.categories #hotelLogos .top #img3 {
+	left: 50%;
+	background-image: url(../img/ourcustomers/hotel3.png);
+	animation-name: img3;
+}
+.categories #hotelLogos .top #img4 {
+	left: 75%;
+	background-image: url(../img/ourcustomers/hotel4.png);
+	animation-name: img4;
+}
+.categories #hotelLogos .top #img5 {
+	left: 100%;
+	background-image: url(../img/ourcustomers/hotel5.png);
+	animation-name: img5;
+}
+.categories #hotelLogos .top #img6 {
+	left: 125%;
+	background-image: url(../img/ourcustomers/hotel6.png);
+	animation-name: img6;
+}
+.categories #hotelLogos .top #img7 {
+	left: -50%;
+	background-image: url(../img/ourcustomers/hotel7.png);
+	animation-name: img7;
+}
+.categories #hotelLogos .top #img8 {
+	left: -25%;
+	background-image: url(../img/ourcustomers/hotel8.png);
+	animation-name: img8;
+}
+.categories #hotelLogos .bottom #img1 {
+	left: 100%;
+	background-image: url(../img/ourcustomers/hotel1.png);
+	animation-name: img5;
+}
+.categories #hotelLogos .bottom #img2 {
+	left: 125%;
+	background-image: url(../img/ourcustomers/hotel2.png);
+	animation-name: img6;
+}
+.categories #hotelLogos .bottom #img3 {
+	left: -50%;
+	background-image: url(../img/ourcustomers/hotel3.png);
+	animation-name: img7;
+}
+.categories #hotelLogos .bottom #img4 {
+	left: -25%;
+	background-image: url(../img/ourcustomers/hotel4.png);
+	animation-name: img8;
+}
+.categories #hotelLogos .bottom #img5 {
+	left: 0%;
+	background-image: url(../img/ourcustomers/hotel5.png);
+	animation-name: img1;
+}
+.categories #hotelLogos .bottom #img6 {
+	left: 25%;
+	background-image: url(../img/ourcustomers/hotel6.png);
+	animation-name: img2;
+}
+.categories #hotelLogos .bottom #img7 {
+	left: 50%;
+	background-image: url(../img/ourcustomers/hotel7.png);
+	animation-name: img3;
+}
+.categories #hotelLogos .bottom #img8 {
+	left: 75%;
+	background-image: url(../img/ourcustomers/hotel8.png);
+	animation-name: img4;
+}
+.categories #caterLogos .top #img1 {
+	left: 0%;
+	background-image: url(../img/ourcustomers/cater1.jpg);
+	animation-name: img1;
+}
+.categories #caterLogos .top #img2 {
+	left: 25%;
+	background-image: url(../img/ourcustomers/cater2.jpg);
+	animation-name: img2;
+}
+.categories #caterLogos .top #img3 {
+	left: 50%;
+	background-image: url(../img/ourcustomers/cater3.png);
+	animation-name: img3;
+}
+.categories #caterLogos .top #img4 {
+	left: 75%;
+	background-image: url(../img/ourcustomers/cater4.jpg);
+	animation-name: img4;
+}
+.categories #caterLogos .top #img5 {
+	left: 100%;
+	background-image: url(../img/ourcustomers/cater5.jpg);
+	animation-name: img5;
+}
+.categories #caterLogos .top #img6 {
+	left: 125%;
+	background-image: url(../img/ourcustomers/cater6.jpg);
+	animation-name: img6;
+}
+.categories #caterLogos .top #img7 {
+	left: -50%;
+	background-image: url(../img/ourcustomers/cater7.png);
+	animation-name: img7;
+}
+.categories #caterLogos .top #img8 {
+	left: -25%;
+	background-image: url(../img/ourcustomers/cater8.jpg);
+	animation-name: img8;
+}
+.categories #caterLogos .bottom #img1 {
+	left: 100%;
+	background-image: url(../img/ourcustomers/cater1.jpg);
+	animation-name: img5;
+}
+.categories #caterLogos .bottom #img2 {
+	left: 125%;
+	background-image: url(../img/ourcustomers/cater2.jpg);
+	animation-name: img6;
+}
+.categories #caterLogos .bottom #img3 {
+	left: -50%;
+	background-image: url(../img/ourcustomers/cater3.png);
+	animation-name: img7;
+}
+.categories #caterLogos .bottom #img4 {
+	left: -25%;
+	background-image: url(../img/ourcustomers/cater4.jpg);
+	animation-name: img8;
+}
+.categories #caterLogos .bottom #img5 {
+	left: 0%;
+	background-image: url(../img/ourcustomers/cater5.jpg);
+	animation-name: img1;
+}
+.categories #caterLogos .bottom #img6 {
+	left: 25%;
+	background-image: url(../img/ourcustomers/cater6.jpg);
+	animation-name: img2;
+}
+.categories #caterLogos .bottom #img7 {
+	left: 50%;
+	background-image: url(../img/ourcustomers/cater7.png);
+	animation-name: img3;
+}
+.categories #caterLogos .bottom #img8 {
+	left: 75%;
+	background-image: url(../img/ourcustomers/cater8.jpg);
+	animation-name: img4;
+}
+@keyframes img1 {
+	0% { left: 0%; opacity: 1; }
+	12% { left: -25%; opacity: 1; }
+	25% { left: -50%; opacity: 0; }
+	37% { left: 125%; opacity: 0; }
+	50% { left: 100%; opacity: 1; }
+	62% { left: 75%; opacity: 1; }
+	75% { left: 50%; opacity: 1; }
+	87% { left: 25%; opacity: 1; }
+	100% { left: 0%; opacity: 1; }
+}
+@keyframes img2 {
+	0% { left: 25%; opacity: 1; }
+	12% { left: 0%; opacity: 1; }
+	25% { left: -25%; opacity: 1; }
+	37% { left: -50%; opacity: 0; }
+	50% { left: 125%; opacity: 0; }
+	62% { left: 100%; opacity: 1; }
+	75% { left: 75%; opacity: 1; }
+	87% { left: 50%; opacity: 1; }
+	100% { left: 25%; opacity: 1; }
+}
+@keyframes img3 {
+	0% { left: 50%; opacity: 1; }
+	12% { left: 25%; opacity: 1; }
+	25% { left: 0%; opacity: 1; }
+	37% { left: -25%; opacity: 1; }
+	50% { left: -50%; opacity: 0; }
+	62% { left: 125%; opacity: 0; }
+	75% { left: 100%; opacity: 1; }
+	87% { left: 75%; opacity: 1; }
+	100% { left: 50%; opacity: 1; }
+}
+@keyframes img4 {
+	0% { left: 75%; opacity: 1; }
+	12% { left: 50%; opacity: 1; }
+	25% { left: 25%; opacity: 1; }
+	37% { left: 0%; opacity: 1; }
+	50% { left: -25%; opacity: 1; }
+	62% { left: -50%; opacity: 0; }
+	75% { left: 125%; opacity: 0; }
+	87% { left: 100%; opacity: 1; }
+	100% { left: 75%; opacity: 1; }
+}
+@keyframes img5 {
+	0% { left: 100%; opacity: 1; }
+	12% { left: 75%; opacity: 1; }
+	25% { left: 50%; opacity: 1; }
+	37% { left: 25%; opacity: 1; }
+	50% { left: 0%; opacity: 1; }
+	62% { left: -25%; opacity: 1; }
+	75% { left: -50%; opacity: 0; }
+	87% { left: 125%; opacity: 0; }
+	100% { left: 100%; opacity: 1; }
+}
+@keyframes img6 {
+	0% { left: 125%; opacity: 0; }
+	12% { left: 100%; opacity: 1; }
+	25% { left: 75%; opacity: 1; }
+	37% { left: 50%; opacity: 1; }
+	50% { left: 25%; opacity: 1; }
+	62% { left: 0%; opacity: 1; }
+	75% { left: -25%; opacity: 1; }
+	87% { left: -50%; opacity: 0; }
+	100% { left: 125%; opacity: 0; }
+}
+@keyframes img7 {
+	0% { left: -50%; opacity: 0; }
+	12% { left: 125%; opacity: 0; }
+	25% { left: 100%; opacity: 1; }
+	37% { left: 75%; opacity: 1; }
+	50% { left: 50%; opacity: 1; }
+	62% { left: 25%; opacity: 1; }
+	75% { left: 0%; opacity: 1; }
+	87% { left: -25%; opacity: 1; }
+	100% { left: -50%; opacity: 0; }
+}
+@keyframes img8 {
+	0% { left: -25%; opacity: 1; }
+	12% { left: -50%; opacity: 0; }
+	25% { left: 125%; opacity: 0; }
+	37% { left: 100%; opacity: 1; }
+	50% { left: 75%; opacity: 1; }
+	62% { left: 50%; opacity: 1; }
+	75% { left: 25%; opacity: 1; }
+	87% { left: 0%; opacity: 1; }
+	100% { left: -25%; opacity: 1; }
+}
+/*-----customerSay-----*/
+.customersSay {
+	background-color: #86a64c;
+	text-align: center;
+}
+.customersSay .container {
+	padding: 98px 0;
+	position: relative;
+}
+.customersSay h4 {
+	font-size: 2.4rem;
+	margin-bottom: 35px;
+}
+.customersSay .logos {
+	width: 25%;
+	margin: 0 auto;
+	height: 60px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 35px;
+}
+.customersSay .logos div {
+	background-color: #fff;
+	border-radius: 50%;
+	opacity: 0.7;
+}
+.customersSay .logos div:hover {
+	opacity: 1;
+	transform: scale(1.25);
+}
+.customersSay .logos .first {
+	padding: 17.5px 5px;
+}
+.customersSay .logos .second {
+	padding: 19px 5px;
+}
+.customersSay .logos .third{
+	padding: 12px 5px;
+}
+.customersSay p {
+	font-size: 1.4rem;
+	width: 50%;
+	margin: 0 auto 30px;
+	text-align: center;
+}
+.customersSay h6 {
+	font-size: 1.4rem;
+	margin-bottom: 13px;
+}
+.customersSay hr {
+	width: 20px;
+	height: 1px;
+	background-color: #fff;
+	margin: 0 auto 33px;
+}
+.customersSay span {
+	font-size: 1.2rem;
+}
+.customersSay .container i {
+	color: #546830;
+	position: absolute;
+	font-size: 100px;
+}
+.customersSay .container i.fa-quote-left {
+	top: 0;
+	left: 0;
+}
+.customersSay .container i.fa-quote-right {
+	bottom: 0;
+	right: 0;
+}

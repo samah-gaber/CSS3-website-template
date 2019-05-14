@@ -1,0 +1,94 @@
+/*-------tablet screen-------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	html {
+		font-size: 12px;
+	}
+	.container {
+		width: 90%;
+	}
+	.header .headerContainer {
+		width: 95%;
+	}
+	.header .navBar {
+		width: 70%;
+	}
+}
+/*-------mobile screen-------*/
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 8px;
+	}
+	.container {
+		width: 95%;
+	}
+	.header .headerContainer {
+		display: none;
+	}
+	.header .mobLogo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.header .mobLogo img {
+		width: 25%;
+		order: 2;
+	}
+	.header .mobLogo .icons i.fa-times {
+		display: none;
+	}
+	.header .mobLogo i {
+		color: #fff;
+		font-size: 2.5rem;
+	}
+	.header .mobLogo .icons:focus i.fa-bars{
+		display: none;
+	}
+	.header .mobLogo .icons:focus i.fa-times{
+		display: block;
+	}
+	.header .mobLogo .icons:focus + .mobNavBar {
+		display: block;
+	}
+	.header .mobLogo .mobNavBar {
+		background: rgba(134, 166, 76);
+		padding: 5px 10px;
+		position: absolute;
+		top: 90%;
+		display: none;
+	}
+	.header .mobLogo .mobNavBar ul {
+		list-style: none;
+	}
+	.header .mobLogo .mobNavBar li {
+		margin-bottom: 10px;
+	}
+	.header .mobLogo .mobNavBar li:hover i {
+		color: #fff;
+	}
+	.header .mobLogo .mobNavBar i {
+		margin-left: 15px;
+		font-size: 1.5rem;
+		color: transparent;
+	}
+	.header .mobLogo .mobNavBar a {
+		text-decoration: none;
+		font-size: 1.7rem;
+	}
+	.header .mobLogo .mobNavBar a.current {
+		color: #e58c42;
+	}
+	.aboutUs .sections {
+		grid-template-columns: 1fr;
+	}
+	.footer .container {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		grid-row-gap: 8rem;
+	}
+	.footer .brackets p {
+		font-size: 1rem;
+		width: 60%;
+		bottom: 12%;
+		left: 19%;
+	}
+}

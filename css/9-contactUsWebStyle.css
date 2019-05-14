@@ -1,0 +1,84 @@
+/*-----mainSec-----*/
+.mainSec {
+	background-image: url(../img/contactus/contactus-back.jpg),-webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);
+}
+/*-----map-----*/
+.map img {
+	width: 100%;
+}
+/*-----contactUs-----*/
+.contactUs {
+	padding: 70px 0 160px;
+	text-align: center;
+}
+.contactUs .content {
+	display: flex;
+	justify-content: space-between;
+}
+.contactUs .title h3 {
+	margin-bottom: 27px;
+	font-size: 2.4rem;
+}
+.contactUs .title p {
+	margin-bottom: 82px;
+	font-size: 2.2rem;
+	color: #7c7c7c;
+}
+.contactUs .contactInfo {
+	text-align: left;
+	width: 25%;
+}
+.contactUs .contactInfo h6 {
+	color: #4d4d4d;
+	font-size: 2.2rem;
+	margin-bottom: 35px;
+}
+.contactUs .contactInfo p {
+	font-size: 1.8rem;
+}
+.contactUs .form {
+	text-align: left;
+}
+.contactUs .form h6 {
+	color: #da7c4b;
+	font-size: 2.2rem;
+	margin-bottom: 60px;
+}
+.contactUs form input {
+	border: none;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 20px;
+	margin-bottom: 50px;
+}
+.contactUs form input[type="text"], .contactUs form input[type="email"] {
+	width: 40%;
+	margin-right: 35px;
+}
+.contactUs form input[type="message"] {
+	width: 87%;
+}
+.contactUs .form span {
+	font-size: 1.4rem;
+	color: #4d4d4d;
+}
+.contactUs .form .socialEmail {
+	display: flex;
+	justify-content: space-between;
+}
+.contactUs .form .socialEmail i {
+	font-size: 25px;
+	color: #cdd2d6;
+	margin-right: 15px;
+}
+.contactUs .form .social i.fa-twitter-square:hover {
+	color: #2ca5da;
+}
+.contactUs .form .social i.fa-facebook-square:hover {
+	color: #4267b2;
+}
+.contactUs .form .social i.fa-google-plus:hover {
+	color: #9a100f;
+}
+.contactUs .form .email i {
+	font-size: 18px;
+}

@@ -1,0 +1,429 @@
+/*-----mainSec-----*/
+.mainSec {
+	background-image: url(../img/home/home-bg.jpg),-webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);
+	padding: 390px 0 138px;
+}
+.mainSec img.mainLogo {
+	margin-bottom: 120px;
+	width: 50%;
+}
+.mainSec .sections {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.mainSec .sections img {
+	border: 5px solid #edeff1;
+	border-radius: 50%;
+	margin-bottom: 30px;
+}
+.mainSec .sections h5 {
+	font-size: 2.2rem;
+	margin-bottom: 28px;
+}
+.mainSec .sections p {
+	font-size: 1.4rem;
+	margin: 0 auto 78px;
+	width: 80%;
+}
+/*-----newsletter-----*/
+.newsLetter {
+	background-image: url(../img/home/newsletter-back.jpg);
+	background-repeat: no-repeat;
+	padding: 92px 0 110px;
+	text-align: center;
+}
+.newsLetter h3 {
+	font-size: 2.4rem;
+	margin-bottom: 22px;
+}
+.newsLetter p {
+	font-size: 1.4rem;
+	margin-bottom: 70px;
+}
+.newsLetter .slider {
+	width: 390px;
+	height: 42px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+.newsLetter input {
+	width: 42%;
+	height: 100%;
+	background-color: #ffffff38;
+	border: 1px solid #fff;
+	border-radius: 27px;
+	text-align: left;
+	padding-left: 32px;
+	box-sizing: border-box;
+	transition: width 0.5s linear;
+}
+.newsLetter input::placeholder {
+	color: #fff;
+	font-family: HelveticaCn;
+	font-size: 1.5rem;
+}
+.newsLetter .slider button {
+	height: 100%;
+	width: 164px;
+	position: absolute;
+	right: 29%;
+	top: 0;
+	padding: 11px 48px;
+}
+.newsLetter .slider button:focus {
+	animation: btnSlide 0.5s linear normal forwards;
+}
+.newsLetter .slider button:focus + input {
+	width: 100%;
+}
+@keyframes btnSlide{
+	from {
+		right: 29%;
+	}
+	to {
+		right: 0%;
+	}
+}
+/*-----iHoreca section-----*/
+.ihorecaSection {
+	padding: 90px 0;
+}
+.ihorecaSection .signUp, .ihorecaSection .logIn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.ihorecaSection h5 {
+	font-size: 2.2rem;
+	margin-bottom: 30px;
+}
+.ihorecaSection p {
+	font-size: 1.4rem;
+	margin-bottom: 50px;
+}
+.ihorecaSection .signUp {
+	margin-bottom: 50px;
+}
+.ihorecaSection .signUp .signUpTxt, .ihorecaSection .logIn .logInTxt {
+	text-align: left;
+	width: 50%;
+}
+.ihorecaSection .signUp .signUpImage {
+	order: 2;
+}
+.ihorecaSection .signUp .signUpImage, .ihorecaSection .logIn .logInImage{
+	width: 32%;
+	height: 312px;
+	background-repeat: no-repeat;
+	border: 1px solid;
+	border-radius: 50%;
+	background-clip: padding-box;
+}
+.ihorecaSection .signUp .signUpImage {
+	background-image: url(../img/home/aboutus-ihoreca.jpg);
+	background-position: bottom;
+	border-color: #f8b882;
+}
+.ihorecaSection .logIn .logInImage {
+	background-image: url(../img/home/existingHorecaCustomer.jpg);
+	background-position: top;
+	border-color: #86a64c;
+}
+.ihorecaSection .signUp button {
+	background-color: #f8b882;
+	color: #fff;
+}
+.ihorecaSection .logIn button {
+	background-color: #86a64c;
+	color: #fff;
+}
+/*-----brands-----*/
+.brands {
+	text-align: center;
+	padding: 40px 0 60px;
+}
+.brands h3 {
+	font-size: 2.4rem;
+	margin-bottom: 75px;
+}
+.brands .content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.brands .slider {
+	position: relative;
+	width: 50%;
+	height: 90px;
+	overflow: hidden;
+	margin: 0 40px;
+}
+.brands i {
+	color: #9e9e9e;
+	font-size: 4rem;
+}
+.brands i.fa-angle-right {
+	order: 2;
+}
+.brands i.fa-angle-left:focus ~ div .img {
+	animation-play-state: running;
+}
+.brands i.fa-angle-right:focus ~ div .img {
+	animation-direction: reverse;
+	animation-play-state: running;
+}
+.brands .slider .img {
+	display: inline-block;
+	position: absolute;
+	width: 16.6%;
+	height: 90px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-play-state: paused;
+}
+.brands #img1 {
+	background-image: url(../img/home/prod06.png);
+	animation-name: img1;
+	left: 0%;
+}
+.brands #img2 {
+	background-image: url(../img/home/prod05.png);
+	animation-name: img2;
+	left: 16.6%;
+}
+.brands #img3 {
+	background-image: url(../img/home/prod04.png);
+	animation-name: img3;
+	left: 33.2%;
+}
+.brands #img4 {
+	background-image: url(../img/home/prod03.png);
+	animation-name: img4;
+	left: 49.8%;
+}
+.brands #img5 {
+	background-image: url(../img/home/prod02.png);
+	animation-name: img5;
+	left: 66.4%;
+}
+.brands #img6 {
+	background-image: url(../img/home/prod01.png);
+	animation-name: img6;
+	left: 83%;
+}
+.brands #img7 {
+	background-image: url(../img/home/prod06.png);
+	animation-name: img7;
+	left: 100%;
+}
+.brands #img8 {
+	background-image: url(../img/home/prod05.png);
+	animation-name: img8;
+	left: 116.6%;
+}
+.brands #img9 {
+	background-image: url(../img/home/prod04.png);
+	animation-name: img9;
+	left: 133.2%;
+}
+.brands #img10 {
+	background-image: url(../img/home/prod03.png);
+	animation-name: img10;
+	left: -49.8%;
+}
+.brands #img11 {
+	background-image: url(../img/home/prod02.png);
+	animation-name: img11;
+	left: -33.2%;
+}
+.brands #img12 {
+	background-image: url(../img/home/prod01.png);
+	animation-name: img12;
+	left: -16.6%;
+}
+@keyframes img1 {
+	0% { left: 0%; opacity: 1; }
+	8% { left: -16.6%; opacity: 1; }
+	16% { left: -33.2%; opacity: 1; }
+	25% { left: -49.8%; opacity: 0; }
+	33% { left: 133.2%; opacity: 0; }
+	41% { left: 116.6%; opacity: 1; }
+	50% { left: 100%; opacity: 1; }
+	58% { left: 83%; opacity: 1; }
+	66% { left: 66.4%; opacity: 1; }
+	75% { left: 49.8%; opacity: 1; }
+	83% { left: 33.2%; opacity: 1; }
+	91% { left: 16.6%; opacity: 1; }
+	100% { left: 0%; opacity: 1; }
+}
+@keyframes img2 {
+	0% { left: 16.6%; opacity: 1; }
+	8% { left: 0%; opacity: 1; }
+	16% { left: -16.6%; opacity: 1; }
+	25% { left: -33.2%; opacity: 1; }
+	33% { left: -49.8%; opacity: 0; }
+	41% { left: 133.2%; opacity: 0; }
+	50% { left: 116.6%; opacity: 1; }
+	58% { left: 100%; opacity: 1; }
+	66% { left: 83%; opacity: 1; }
+	75% { left: 66.4%; opacity: 1; }
+	83% { left: 49.8%; opacity: 1; }
+	91% { left: 33.2%; opacity: 1; }
+	100% { left: 16.6%; opacity: 1; }
+}
+@keyframes img3 {
+	0% { left: 33.2%; opacity: 1; }
+	8% { left: 16.6%; opacity: 1; }
+	16% { left: 0%; opacity: 1; }
+	25% { left: -16.6%; opacity: 1; }
+	33% { left: -33.2%; opacity: 1; }
+	41% { left: -49.8%; opacity: 0; }
+	50% { left: 133.2%; opacity: 0; }
+	58% { left: 116.6%; opacity: 1; }
+	66% { left: 100%; opacity: 1; }
+	75% { left: 83%; opacity: 1; }
+	83% { left: 66.4%; opacity: 1; }
+	91% { left: 49.8%; opacity: 1; }
+	100% { left: 33.2%; opacity: 1; }
+}
+@keyframes img4 {
+	0% { left: 49.8%; opacity: 1; }
+	8% { left: 33.2%; opacity: 1; }
+	16% { left: 16.6%; opacity: 1; }
+	25% { left: 0%; opacity: 1; }
+	33% { left: -16.6%; opacity: 1; }
+	41% { left: -33.2%; opacity: 1; }
+	50% { left: -49.8%; opacity: 0; }
+	58% { left: 133.2%; opacity: 0; }
+	66% { left: 116.6%; opacity: 1; }
+	75% { left: 100%; opacity: 1; }
+	83% { left: 83%; opacity: 1; }
+	91% { left: 66.4%; opacity: 1; }
+	100% { left: 49.8%; opacity: 1; }
+}
+@keyframes img5 {
+	0% { left: 66.4%; opacity: 1; }
+	8% { left: 49.8%; opacity: 1; }
+	16% { left: 33.2%; opacity: 1; }
+	25% { left: 16.6%; opacity: 1; }
+	33% { left: 0%; opacity: 1; }
+	41% { left: -16.6%; opacity: 1; }
+	50% { left: -33.2%; opacity: 1; }
+	58% { left: -49.8%; opacity: 0; }
+	66% { left: 133.2%; opacity: 0; }
+	75% { left: 116.6%; opacity: 1; }
+	83% { left: 100%; opacity: 1; }
+	91% { left: 83%; opacity: 1; }
+	100% { left: 66.4%; opacity: 1; }
+}
+@keyframes img6 {
+	0% { left: 83%; opacity: 1; }
+	8% { left: 66.4%; opacity: 1; }
+	16% { left: 49.8%; opacity: 1; }
+	25% { left: 33.2%; opacity: 1; }
+	33% { left: 16.6%; opacity: 1; }
+	41% { left: 0%; opacity: 1; }
+	50% { left: -16.6%; opacity: 1; }
+	58% { left: -33.2%; opacity: 1; }
+	66% { left: -49.8%; opacity: 0; }
+	75% { left: 133.2%; opacity: 0; }
+	83% { left: 116.6%; opacity: 1; }
+	91% { left: 100%; opacity: 1; }
+	100% { left: 83%; opacity: 1; }
+}
+@keyframes img7 {
+	0% { left: 100%; opacity: 1; }
+	8% { left: 83%; opacity: 1; }
+	16% { left: 66.4%; opacity: 1; }
+	25% { left: 49.8%; opacity: 1; }
+	33% { left: 33.2%; opacity: 1; }
+	41% { left: 16.6%; opacity: 1; }
+	50% { left: 0%; opacity: 1; }
+	58% { left: -16.6%; opacity: 1; }
+	66% { left: -33.2%; opacity: 1; }
+	75% { left: -49.8%; opacity: 0; }
+	83% { left: 133.2%; opacity: 0; }
+	91% { left: 116.6%; opacity: 1; }
+	100% { left: 100%; opacity: 1; }
+}
+@keyframes img8 {
+	0% { left: 116.6%; opacity: 1; }
+	8% { left: 100%; opacity: 1; }
+	16% { left: 83%; opacity: 1; }
+	25% { left: 66.4%; opacity: 1; }
+	33% { left: 49.8%; opacity: 1; }
+	41% { left: 33.2%; opacity: 1; }
+	50% { left: 16.6%; opacity: 1; }
+	58% { left: 0%; opacity: 1; }
+	66% { left: -16.6%; opacity: 1; }
+	75% { left: -33.2%; opacity: 1; }
+	83% { left: -49.8%; opacity: 0; }
+	91% { left: 133.2%; opacity: 0; }
+	100% { left: 116.6%; opacity: 1; }
+}
+@keyframes img9 {
+	0% { left: 133.2%; opacity: 0; }
+	8% { left: 116.6%; opacity: 1; }
+	16% { left: 100%; opacity: 1; }
+	25% { left: 83%; opacity: 1; }
+	33% { left: 66.4%; opacity: 1; }
+	41% { left: 49.8%; opacity: 1; }
+	50% { left: 33.2%; opacity: 1; }
+	58% { left: 16.6%; opacity: 1; }
+	66% { left: 0%; opacity: 1; }
+	75% { left: -16.6%; opacity: 1; }
+	83% { left: -33.2%; opacity: 1; }
+	91% { left: -49.8%; opacity: 0; }
+	100% { left: 133.2%; opacity: 0; }
+}
+@keyframes img10 {
+	0% { left: -49.8%; opacity: 0; }
+	8% { left: 133.2%; opacity: 0; }
+	16% { left: 116.6%; opacity: 1; }
+	25% { left: 100%; opacity: 1; }
+	33% { left: 83%; opacity: 1; }
+	41% { left: 66.4%; opacity: 1; }
+	50% { left: 49.8%; opacity: 1; }
+	58% { left: 33.2%; opacity: 1; }
+	66% { left: 16.6%; opacity: 1; }
+	75% { left: 0%; opacity: 1; }
+	83% { left: -16.6%; opacity: 1; }
+	91% { left: -33.2%; opacity: 1; }
+	100% { left: -49.8%; opacity: 0; }
+}
+@keyframes img11 {
+	0% { left: -33.2%; opacity: 1; }
+	8% { left: -49.8%; opacity: 0; }
+	16% { left: 133.2%; opacity: 0; }
+	25% { left: 116.6%; opacity: 1; }
+	33% { left: 100%; opacity: 1; }
+	41% { left: 83%; opacity: 1; }
+	50% { left: 66.4%; opacity: 1; }
+	58% { left: 49.8%; opacity: 1; }
+	66% { left: 33.2%; opacity: 1; }
+	75% { left: 16.6%; opacity: 1; }
+	83% { left: 0%; opacity: 1; }
+	91% { left: -16.6%; opacity: 1; }
+	100% { left: -33.2%; opacity: 1; }
+}
+@keyframes img12 {
+	0% { left: -16.6%; opacity: 1; }
+	8% { left: -33.2%; opacity: 1; }
+	16% { left: -49.8%; opacity: 0; }
+	25% { left: 133.2%; opacity: 0; }
+	33% { left: 116.6%; opacity: 1; }
+	41% { left: 100%; opacity: 1; }
+	50% { left: 83%; opacity: 1; }
+	58% { left: 66.4%; opacity: 1; }
+	66% { left: 49.8%; opacity: 1; }
+	75% { left: 33.2%; opacity: 1; }
+	83% { left: 16.6%; opacity: 1; }
+	91% { left: 0%; opacity: 1; }
+	100% { left: -16.6%; opacity: 1; }
+}

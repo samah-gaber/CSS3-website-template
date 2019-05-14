@@ -1,0 +1,56 @@
+/*-----mainSec-----*/
+.mainSec {
+	background-image: url(../img/aboutus/aboutus-back.jpg),-webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);
+}
+/*------whatWeDo-----*/
+.whatWeDo {
+	background-image: url(../img/aboutus/aboutus-whatwedo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 160px 0;
+	text-align: center;
+	background-position: center;
+}
+.whatWeDo h2 {
+	font-size: 7rem;
+}
+/*-----ourServices-----*/
+.ourServices {
+	text-align: center;
+	padding-top: 95px;
+}
+.ourServices h3 {
+	font-size: 2.4rem;
+	margin-bottom: 95px;
+}
+.ourServices .info h4 {
+	font-size: 2.2rem;
+	margin-bottom: 20px;
+}
+.ourServices .info p {
+	font-size: 1.4rem;
+}
+.ourServices img {
+	width: 50%;
+}
+.ourServices .horecaStar, .ourServices .tradeYard, .ourServices .ihoreca {
+	display: flex;
+}
+.ourServices .info{
+	text-align: left;
+	padding: 115px 90px;
+}
+.ourServices .horecaStar .info{
+	background-color: #82a759;
+}
+.ourServices .tradeYard .info{
+	background-color: #da7c4b;
+}
+.ourServices .ihoreca .info{
+	background-color: #a7a7a7;
+}
+.ourServices .ihoreca .info span {
+	color: #d67843;
+}
+
+
